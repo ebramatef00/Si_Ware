@@ -1,0 +1,37 @@
+family,subset,model,MAE,RMSE,MAPE_%,MedAPE_%,bias_%
+quarter,clean,baseline: global $/mile,201.68,279.96,9.59,8.12,-2.69
+quarter,all,baseline: global $/mile,251.54,672.99,11.68,8.25,-2.7
+quarter,clean,baseline: equipment x distance band,113.7,153.27,4.92,4.5,-2.82
+quarter,all,baseline: equipment x distance band,165.12,643.09,7.09,4.55,-2.83
+quarter,clean,baseline: lane median,134.78,335.65,5.58,4.43,-2.77
+quarter,all,baseline: lane median,186.12,707.47,7.81,4.49,-2.77
+quarter,clean,naive GBM on all columns,93.38,136.6,4.23,3.31,-1.49
+quarter,all,naive GBM on all columns,144.78,632.79,6.43,3.37,-1.49
+quarter,clean,FINAL model,35.25,51.54,1.45,1.23,-0.08
+quarter,all,FINAL model,87.55,620.29,3.72,1.25,-0.08
+quarter,clean,final - no outlier removal,71.23,115.02,3.04,2.29,0.1
+quarter,all,final - no outlier removal,123.06,629.28,5.29,2.33,0.1
+quarter,clean,final - no market index,85.95,111.58,3.59,3.44,2.68
+quarter,all,final - no market index,137.48,626.4,5.89,3.47,2.68
+quarter,clean,final - no quarter-end ramp,67.82,101.06,2.81,2.3,-2.17
+quarter,all,final - no quarter-end ramp,119.77,630.28,5.02,2.34,-2.18
+quarter,clean,final - no quarter level,63.05,84.9,2.63,2.52,-2.52
+quarter,all,final - no quarter level,115.01,627.75,4.82,2.55,-2.52
+quarter,clean,final + quote_signal,47.89,78.49,2.09,1.3,-0.22
+quarter,all,final + quote_signal,99.98,622.79,4.33,1.32,-0.22
+new_city,clean,baseline: equipment x distance band,117.09,153.03,5.21,4.85,-2.99
+new_city,all,baseline: equipment x distance band,165.84,601.07,7.34,4.9,-2.99
+new_city,clean,baseline: lane median,117.09,153.03,5.21,4.85,-2.99
+new_city,all,baseline: lane median,165.84,601.07,7.34,4.9,-2.99
+new_city,clean,naive GBM on all columns,96.45,139.61,4.26,3.36,-1.38
+new_city,all,naive GBM on all columns,145.0,589.05,6.42,3.41,-1.38
+new_city,clean,FINAL model,38.45,54.92,1.62,1.37,-0.15
+new_city,all,FINAL model,88.18,578.81,3.85,1.39,-0.15
+next_qtr,clean,baseline: equipment x distance band,78.59,107.13,3.67,3.13,-0.75
+next_qtr,all,baseline: equipment x distance band,138.68,653.49,6.65,3.18,-0.75
+next_qtr,clean,baseline: lane median,86.55,207.75,3.81,2.89,-0.98
+next_qtr,all,baseline: lane median,147.1,688.14,6.76,2.95,-0.98
+next_qtr,clean,naive GBM on all columns,70.6,106.69,3.07,2.51,-0.64
+next_qtr,all,naive GBM on all columns,130.68,652.35,6.03,2.56,-0.64
+next_qtr,clean,FINAL model,34.63,49.21,1.51,1.29,-0.85
+next_qtr,all,FINAL model,95.31,646.72,4.48,1.32,-0.85

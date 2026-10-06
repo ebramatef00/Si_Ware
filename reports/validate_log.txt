@@ -1,0 +1,82 @@
+Running validation on 48,000 labelled loads ...
+  quarter   Q2: <2025-05-01 -> [2025 baseline: global $/mile                MAPE(clean) 9.82%  bias -5.71%
+  quarter   Q2: <2025-05-01 -> [2025 baseline: equipment x distance band    MAPE(clean) 6.17%  bias -6.10%
+  quarter   Q2: <2025-05-01 -> [2025 baseline: lane median                  MAPE(clean) 6.92%  bias -5.91%
+  quarter   Q2: <2025-05-01 -> [2025 naive GBM on all columns               MAPE(clean) 4.03%  bias -1.49%
+  quarter   Q2: <2025-05-01 -> [2025 FINAL model                            MAPE(clean) 1.48%  bias -0.77%
+  quarter   Q2: <2025-05-01 -> [2025 final - no outlier removal             MAPE(clean) 3.25%  bias -1.05%
+  quarter   Q2: <2025-05-01 -> [2025 final - no market index                MAPE(clean) 1.60%  bias -0.02%
+  quarter   Q2: <2025-05-01 -> [2025 final - no quarter-end ramp            MAPE(clean) 2.48%  bias -1.80%
+  quarter   Q2: <2025-05-01 -> [2025 final - no quarter level               MAPE(clean) 2.14%  bias -1.94%
+  quarter   Q2: <2025-05-01 -> [2025 final + quote_signal                   MAPE(clean) 1.62%  bias -0.37%
+  new_city  Q2 draw 0: ['Alb baseline: equipment x distance band    MAPE(clean) 6.97%  bias -7.13%
+  new_city  Q2 draw 0: ['Alb baseline: lane median                  MAPE(clean) 6.97%  bias -7.13%
+  new_city  Q2 draw 0: ['Alb naive GBM on all columns               MAPE(clean) 4.32%  bias -2.08%
+  new_city  Q2 draw 0: ['Alb FINAL model                            MAPE(clean) 1.65%  bias -0.87%
+  new_city  Q2 draw 1: ['Day baseline: equipment x distance band    MAPE(clean) 6.62%  bias -6.52%
+  new_city  Q2 draw 1: ['Day baseline: lane median                  MAPE(clean) 6.62%  bias -6.52%
+  new_city  Q2 draw 1: ['Day naive GBM on all columns               MAPE(clean) 4.11%  bias -1.66%
+  new_city  Q2 draw 1: ['Day FINAL model                            MAPE(clean) 1.65%  bias -0.75%
+  quarter   Q3: <2025-08-01 -> [2025 baseline: global $/mile                MAPE(clean) 9.35%  bias +0.33%
+  quarter   Q3: <2025-08-01 -> [2025 baseline: equipment x distance band    MAPE(clean) 3.67%  bias +0.45%
+  quarter   Q3: <2025-08-01 -> [2025 baseline: lane median                  MAPE(clean) 4.25%  bias +0.37%
+  quarter   Q3: <2025-08-01 -> [2025 naive GBM on all columns               MAPE(clean) 4.44%  bias -1.50%
+  quarter   Q3: <2025-08-01 -> [2025 FINAL model                            MAPE(clean) 1.42%  bias +0.60%
+  quarter   Q3: <2025-08-01 -> [2025 final - no outlier removal             MAPE(clean) 2.84%  bias +1.25%
+  quarter   Q3: <2025-08-01 -> [2025 final - no market index                MAPE(clean) 5.57%  bias +5.38%
+  quarter   Q3: <2025-08-01 -> [2025 final - no quarter-end ramp            MAPE(clean) 3.14%  bias -2.55%
+  quarter   Q3: <2025-08-01 -> [2025 final - no quarter level               MAPE(clean) 3.12%  bias -3.09%
+  quarter   Q3: <2025-08-01 -> [2025 final + quote_signal                   MAPE(clean) 2.55%  bias -0.06%
+  new_city  Q3 draw 0: ['Alb baseline: equipment x distance band    MAPE(clean) 3.60%  bias +0.83%
+  new_city  Q3 draw 0: ['Alb baseline: lane median                  MAPE(clean) 3.60%  bias +0.83%
+  new_city  Q3 draw 0: ['Alb naive GBM on all columns               MAPE(clean) 4.13%  bias -0.71%
+  new_city  Q3 draw 0: ['Alb FINAL model                            MAPE(clean) 1.57%  bias +0.40%
+  new_city  Q3 draw 1: ['Cor baseline: equipment x distance band    MAPE(clean) 3.64%  bias +0.88%
+  new_city  Q3 draw 1: ['Cor baseline: lane median                  MAPE(clean) 3.64%  bias +0.88%
+  new_city  Q3 draw 1: ['Cor naive GBM on all columns               MAPE(clean) 4.50%  bias -1.06%
+  new_city  Q3 draw 1: ['Cor FINAL model                            MAPE(clean) 1.59%  bias +0.60%
+  next_qtr  <2025-10-01 -> October   baseline: equipment x distance band    MAPE(clean) 3.67%  bias -0.75%
+  next_qtr  <2025-10-01 -> October   baseline: lane median                  MAPE(clean) 3.81%  bias -0.98%
+  next_qtr  <2025-10-01 -> October   naive GBM on all columns               MAPE(clean) 3.07%  bias -0.64%
+  next_qtr  <2025-10-01 -> October   FINAL model                            MAPE(clean) 1.51%  bias -0.85%
+                                                        MAE  ...  bias_%
+family   subset model                                        ...        
+quarter  clean  baseline: global $/mile              201.68  ...   -2.69
+         all    baseline: global $/mile              251.54  ...   -2.70
+         clean  baseline: equipment x distance band  113.70  ...   -2.82
+         all    baseline: equipment x distance band  165.12  ...   -2.83
+         clean  baseline: lane median                134.78  ...   -2.77
+         all    baseline: lane median                186.12  ...   -2.77
+         clean  naive GBM on all columns              93.38  ...   -1.49
+         all    naive GBM on all columns             144.78  ...   -1.49
+         clean  FINAL model                           35.25  ...   -0.08
+         all    FINAL model                           87.55  ...   -0.08
+         clean  final - no outlier removal            71.23  ...    0.10
+         all    final - no outlier removal           123.06  ...    0.10
+         clean  final - no market index               85.95  ...    2.68
+         all    final - no market index              137.48  ...    2.68
+         clean  final - no quarter-end ramp           67.82  ...   -2.17
+         all    final - no quarter-end ramp          119.77  ...   -2.18
+         clean  final - no quarter level              63.05  ...   -2.52
+         all    final - no quarter level             115.01  ...   -2.52
+         clean  final + quote_signal                  47.89  ...   -0.22
+         all    final + quote_signal                  99.98  ...   -0.22
+new_city clean  baseline: equipment x distance band  117.09  ...   -2.99
+         all    baseline: equipment x distance band  165.84  ...   -2.99
+         clean  baseline: lane median                117.09  ...   -2.99
+         all    baseline: lane median                165.84  ...   -2.99
+         clean  naive GBM on all columns              96.45  ...   -1.38
+         all    naive GBM on all columns             145.00  ...   -1.38
+         clean  FINAL model                           38.45  ...   -0.15
+         all    FINAL model                           88.18  ...   -0.15
+next_qtr clean  baseline: equipment x distance band   78.59  ...   -0.75
+         all    baseline: equipment x distance band  138.68  ...   -0.75
+         clean  baseline: lane median                 86.55  ...   -0.98
+         all    baseline: lane median                147.10  ...   -0.98
+         clean  naive GBM on all columns              70.60  ...   -0.64
+         all    naive GBM on all columns             130.68  ...   -0.64
+         clean  FINAL model                           34.63  ...   -0.85
+         all    FINAL model                           95.31  ...   -0.85
+
+[36 rows x 5 columns]
+exit 0
